@@ -9,6 +9,7 @@ public class Person {
 	
 	Person(int age){
 		this.age=age;
+		this.name="NoName";
 	}
 
 	public int getAge() {
@@ -16,5 +17,6 @@ public class Person {
 	}
 
 	public void printPerson() {
+		System.out.println("Name: "+name+"; Age: "+age);
 	}
 }
