@@ -4,6 +4,6 @@ public class TypeConversionTest {
 		long mylong;
 		mylong = myInt;
 		
-		System.out.println("Hello.");
+		System.out.println(mylong);
 	}
 }
