@@ -1,15 +1,15 @@
-import java.time.LocalDate;
+//import java.time.LocalDate;
 
 public class Person {
 	private String name;
-	private LocalDate birthday;
-	private Sex gender;
-	private String emailAddress;
+	// private LocalDate birthday;
+	// private Sex gender;
+	// private String emailAddress;
 	private int age;
-	
-	Person(int age){
-		this.age=age;
-		this.name="NoName";
+
+	Person(int age) {
+		this.age = age;
+		this.name = "NoName";
 	}
 
 	public int getAge() {
@@ -17,6 +17,6 @@ public class Person {
 	}
 
 	public void printPerson() {
-		System.out.println("Name: "+name+"; Age: "+age);
+		System.out.println("Name: " + name + "; Age: " + age);
 	}
 }
