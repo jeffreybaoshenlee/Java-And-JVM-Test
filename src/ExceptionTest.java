@@ -4,8 +4,9 @@ public class ExceptionTest {
 	}
 
 	public static void main(String[] args) {
-		new ExceptionTest().catchOne();
-		;
+		ExceptionTest exceptionTest = new ExceptionTest();
+		exceptionTest.catchOne();
+		exceptionTest.tryCatchFinally();
 	}
 
 	void cantBeZero(int i) throws TestExc {
@@ -27,5 +28,27 @@ public class ExceptionTest {
 	}
 
 	void handleExc(TestExc e) {
+	}
+
+	void tryCatchFinally() {
+		try {
+			tryItOut();
+		} catch (TestExc e) {
+			handleExc(e);
+		} finally {
+			wrapItUp();
+		}
+	}
+
+	void wrapItUp() {
+	}
+
+	void onlyMe(Object f) {
+		synchronized (f) {
+			doSomething();
+		}
+	}
+
+	void doSomething() {
 	}
 }
