@@ -7,9 +7,19 @@ public class InnerClassTest {
 		}
 	}
 
+	@Deprecated
 	public static void main(String[] args) {
-		InnerClassTest innerClassTest=new InnerClassTest();
-		MyInnerClass myInnerClass=innerClassTest.new MyInnerClass();
+		InnerClassTest innerClassTest = new InnerClassTest();
+		MyInnerClass myInnerClass = innerClassTest.new MyInnerClass();
 		myInnerClass.foo();
+	}
+	
+	@Deprecated
+	private static void foo(){		
+	}
+
+	@Deprecated
+	public InnerClassTest() {
+		foo();
 	}
 }
