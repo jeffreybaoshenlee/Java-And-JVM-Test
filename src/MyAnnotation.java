@@ -5,4 +5,5 @@ import java.lang.annotation.RetentionPolicy;
 public @interface MyAnnotation {
 	String NAME();
 	String DATE();
+	MyAnnotation2 ANNO();
 }
