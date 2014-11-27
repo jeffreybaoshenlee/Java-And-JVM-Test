@@ -21,5 +21,12 @@ public class ArrayTest {
 		} finally {
 			o = null;
 		}
+		//
+		// int[] intArr=new int[100];
+		// long[] longArr=new long[10];
+		// float[] floatArr=new float[20];
+		// longArr=floatArr;
+		// floatarr=longArr;
+		// longArr=intArr;
 	}
 }
