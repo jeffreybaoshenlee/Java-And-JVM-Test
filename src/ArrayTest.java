@@ -21,6 +21,9 @@ public class ArrayTest {
 		} finally {
 			o = null;
 		}
+		int[][] twoDimArr = new int[100][100];
+		Object[] objArr = twoDimArr;
+		System.out.println(objArr);
 		//
 		// int[] intArr=new int[100];
 		// long[] longArr=new long[10];
