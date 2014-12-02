@@ -1,4 +1,4 @@
-package com.agilemovidev;
+package com.agilemobidev;
 
 public class InnerClassTest {
 	private class MyInnerClass {
