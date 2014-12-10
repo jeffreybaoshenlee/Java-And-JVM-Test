@@ -8,7 +8,7 @@ public class ConstructorTest {
 	}
 
 	public static void main(String[] args) {
-		new A(new Object(), new A("foo"));
+		System.out.println(new A(new Object(), new A("foo")));
 	}
 }
 
