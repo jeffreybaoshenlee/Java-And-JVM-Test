@@ -3,7 +3,7 @@ import java.lang.annotation.Annotation;
 import java.util.ArrayList;
 import java.util.List;
 
-class MyGenericClass<A, B> {
+class MyGenericClass<MyA, B> {
 }
 
 @MyAnnotation(NAME = "Jeffrey LEE", DATE = "2014/11/19", ANNO = @MyAnnotation2(NUM_OF_TESTCASE = 12))
