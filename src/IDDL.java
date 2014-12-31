@@ -1,5 +1,4 @@
 
-
 import java.lang.invoke.CallSite;
 import java.lang.invoke.ConstantCallSite;
 import java.lang.invoke.MethodHandle;
@@ -17,6 +16,9 @@ public class IDDL {
 	public static CallSite bootstrapDynamic(MethodHandles.Lookup caller,
 			String name, MethodType type) throws IllegalAccessException,
 			NoSuchMethodException {
+		System.out.println(caller);
+		System.out.println(name);
+		System.out.println(type);
 		MethodHandles.Lookup lookup = MethodHandles.lookup();
 		Class<?> thisClass = lookup.lookupClass();
 		handle = lookup.findStatic(thisClass, "method",
