@@ -3,6 +3,11 @@ public class SwitchTest {
 		SwitchTest switchTest = new SwitchTest();
 		System.out.println(switchTest.chooseNear(2));
 		System.out.println(switchTest.chooseFar(2));
+
+		System.out.println("0#".hashCode());
+		System.out.println(".a".hashCode());
+		System.out.println(switchTest.chooseString("0#"));
+		System.out.println(switchTest.chooseString(".a"));
 	}
 
 	int chooseNear(int i) {
@@ -28,6 +33,19 @@ public class SwitchTest {
 			return -1;
 		case 0:
 			return 0;
+		}
+	}
+
+	long chooseString(String i) {
+		switch (i) {
+		case "0#":
+			return 0;
+		default:
+			return -1;
+		case ".a":
+			return 2;
+		case "1":
+			return 1;
 		}
 	}
 }
