@@ -4,5 +4,10 @@ import com.agilemobidev.BaseClass;
 
 @SuppressWarnings("deprecation")
 public class SubClass extends BaseClass {
-	protected int value = 5;
+	public static void main(String[] args) {
+		SubClass sub = new SubClass();
+		// BaseClass base = sub;
+		// System.out.println(base.value);
+		System.out.println(sub.value);
+	}
 }
